@@ -5,7 +5,7 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 87px 50px 90px;
-  font-family: Raleway;
+  font-family: Raleway, "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -49,6 +49,11 @@
   align-items: flex-start;
   max-width: 240px;
   font-style: normal;
+}
+
+.address__link {
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
 }
 
 /* cover */
@@ -116,7 +121,7 @@
   justify-content: space-between;
   padding: 0 50px;
   color: #ffffff;
-  font-family: Raleway;
+  font-family: Raleway, "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 50px;
@@ -133,7 +138,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 256px;
+  min-width: 256px;
   border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 22px;
@@ -153,7 +158,6 @@
   font-family: Raleway;
   font-weight: 700;
   font-size: 40px;
-  font-style: Bold;
   text-transform: uppercase;
 }
 /* ul */
@@ -185,13 +189,14 @@
   height: 100%;
   padding: 48px 40px;
   color: #fff;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
   position: relative;
   z-index: 2;
   font-size: 22px;
-  font-style: Bold;
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -204,20 +209,14 @@
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -259,10 +258,9 @@
 
 .about__title {
   padding: 100px 0 99px;
-  font-family: Raleway;
+  font-family: Raleway, "Arial", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 40px;
-  font-style: Bold;
   text-transform: uppercase;
 }
 
@@ -280,20 +278,22 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 50px;
-  font-family: Raleway;
+  padding: 0 50px 82px;
+  font-family: Raleway, "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
 
-.footer-address {
+.footer address {
   justify-self: start;
   min-width: 247px;
 }
 
-.footer__menu {
+.footer-menu {
+  display: flex;
   justify-self: center;
+  padding: 0;
 }
 
 .footer__menu-list {
@@ -328,4 +328,3 @@
   width: 48px;
   height: 48px;
 }
-
